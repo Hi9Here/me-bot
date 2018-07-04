@@ -1,0 +1,41 @@
+[debug] [2018-07-04T13:46:08.224Z] ----------------------------------------------------------------------
+[debug] [2018-07-04T13:46:08.226Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-04T13:46:08.226Z] CLI Version:   3.18.5
+[debug] [2018-07-04T13:46:08.226Z] Platform:      darwin
+[debug] [2018-07-04T13:46:08.226Z] Node Version:  v9.10.1
+[debug] [2018-07-04T13:46:08.227Z] Time:          Wed Jul 04 2018 14:46:08 GMT+0100 (BST)
+[debug] [2018-07-04T13:46:08.227Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-04T13:46:08.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-04T13:46:08.238Z] > authorizing via signed-in user
+[debug] [2018-07-04T13:46:08.240Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
+  
+ Wed Jul 04 2018 14:46:08 GMT+0100 (BST)
+[debug] [2018-07-04T13:46:09.098Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:46:09.099Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
+  
+ Wed Jul 04 2018 14:46:09 GMT+0100 (BST)
+[debug] [2018-07-04T13:46:10.501Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:46:10.502Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
+  
+ Wed Jul 04 2018 14:46:10 GMT+0100 (BST)
+[debug] [2018-07-04T13:46:11.404Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/wo-home/Documents/dev/me-bot'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-04T13:46:12.284Z] Fetching environment
+[debug] [2018-07-04T13:46:12.287Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+  
+ Wed Jul 04 2018 14:46:12 GMT+0100 (BST)
+[debug] [2018-07-04T13:46:12.288Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
+  
+ Wed Jul 04 2018 14:46:12 GMT+0100 (BST)
+[debug] [2018-07-04T13:46:12.853Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:46:12.854Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-04T13:46:13.481Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-07-04T13:46:14.427Z] Parsing function triggers
+[info] ✔  functions: helloWorld: http://localhost:5001/me-bot-one/us-central1/helloWorld
