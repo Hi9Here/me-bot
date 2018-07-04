@@ -39,3 +39,48 @@
 
 [debug] [2018-07-04T13:46:14.427Z] Parsing function triggers
 [info] ✔  functions: helloWorld: http://localhost:5001/me-bot-one/us-central1/helloWorld
+[debug] [2018-07-04T13:50:25.374Z] ----------------------------------------------------------------------
+[debug] [2018-07-04T13:50:25.377Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-04T13:50:25.377Z] CLI Version:   3.19.3
+[debug] [2018-07-04T13:50:25.377Z] Platform:      darwin
+[debug] [2018-07-04T13:50:25.377Z] Node Version:  v9.10.1
+[debug] [2018-07-04T13:50:25.378Z] Time:          Wed Jul 04 2018 14:50:25 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:25.378Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-04T13:50:25.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-04T13:50:25.388Z] > authorizing via signed-in user
+[debug] [2018-07-04T13:50:25.390Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
+  
+ Wed Jul 04 2018 14:50:25 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:26.854Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:50:26.855Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
+  
+ Wed Jul 04 2018 14:50:26 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:27.488Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:50:27.489Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
+  
+ Wed Jul 04 2018 14:50:27 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:28.421Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/wo-home/Documents/dev/me-bot'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-04T13:50:29.012Z] Fetching environment
+[debug] [2018-07-04T13:50:29.014Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+  
+ Wed Jul 04 2018 14:50:29 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:29.015Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
+  
+ Wed Jul 04 2018 14:50:29 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:29.436Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:50:29.436Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-04T13:50:29.460Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T13:50:29.502Z] Parsing function triggers
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-07-04T13:50:29.515Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
+  
+ Wed Jul 04 2018 14:50:29 GMT+0100 (BST)
+[debug] [2018-07-04T13:50:29.920Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5004
+
