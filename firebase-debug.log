@@ -1,0 +1,50 @@
+[debug] [2018-07-15T15:05:18.798Z] ----------------------------------------------------------------------
+[debug] [2018-07-15T15:05:18.800Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-15T15:05:18.800Z] CLI Version:   3.19.3
+[debug] [2018-07-15T15:05:18.800Z] Platform:      darwin
+[debug] [2018-07-15T15:05:18.800Z] Node Version:  v9.10.1
+[debug] [2018-07-15T15:05:18.801Z] Time:          Sun Jul 15 2018 16:05:18 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:18.801Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-15T15:05:18.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-15T15:05:18.815Z] > authorizing via signed-in user
+[debug] [2018-07-15T15:05:18.817Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-15T15:05:18.817Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/-AEJl5tAUQyaC3yINNDWTj0z5t3ai-vmXbMILOpMbCY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jul 15 2018 16:05:18 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:19.442Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-15T15:05:19.460Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
+  
+ Sun Jul 15 2018 16:05:19 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:20.328Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-15T15:05:20.329Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
+  
+ Sun Jul 15 2018 16:05:20 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:21.664Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-15T15:05:21.665Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
+  
+ Sun Jul 15 2018 16:05:21 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:23.082Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/wo-home/Documents/dev/me-bot'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-15T15:05:23.838Z] Fetching environment
+[debug] [2018-07-15T15:05:23.841Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+  
+ Sun Jul 15 2018 16:05:23 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:23.841Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
+  
+ Sun Jul 15 2018 16:05:23 GMT+0100 (BST)
+[debug] [2018-07-15T15:05:24.501Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-07-15T15:05:24.547Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-15T15:05:24.547Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-15T15:05:26.109Z] Parsing function triggers
+[info] ✔  functions: addMessageOrig: http://localhost:5001/me-bot-one/us-central1/addMessageOrig

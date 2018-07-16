@@ -10,7 +10,12 @@ admin.initializeApp({
 
 const db = admin.firestore()
 
-// Make changes to data when it is added
+
+
+
+
+
+// Change some data when it is added to a Firestore Database
 exports.makeUp = functions.firestore.document('tests/{docID}')
   .onCreate((snap, context) => {
     const testStuff = snap.data()

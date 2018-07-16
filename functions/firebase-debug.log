@@ -1,86 +1,68 @@
-[debug] [2018-07-04T13:46:08.224Z] ----------------------------------------------------------------------
-[debug] [2018-07-04T13:46:08.226Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-07-04T13:46:08.226Z] CLI Version:   3.18.5
-[debug] [2018-07-04T13:46:08.226Z] Platform:      darwin
-[debug] [2018-07-04T13:46:08.226Z] Node Version:  v9.10.1
-[debug] [2018-07-04T13:46:08.227Z] Time:          Wed Jul 04 2018 14:46:08 GMT+0100 (BST)
-[debug] [2018-07-04T13:46:08.227Z] ----------------------------------------------------------------------
+[debug] [2018-07-05T14:26:49.713Z] ----------------------------------------------------------------------
+[debug] [2018-07-05T14:26:49.715Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-05T14:26:49.715Z] CLI Version:   3.19.3
+[debug] [2018-07-05T14:26:49.715Z] Platform:      darwin
+[debug] [2018-07-05T14:26:49.715Z] Node Version:  v9.10.1
+[debug] [2018-07-05T14:26:49.716Z] Time:          Thu Jul 05 2018 15:26:49 GMT+0100 (BST)
+[debug] [2018-07-05T14:26:49.716Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-04T13:46:08.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-04T13:46:08.238Z] > authorizing via signed-in user
-[debug] [2018-07-04T13:46:08.240Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
+[debug] [2018-07-05T14:26:49.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-05T14:26:49.726Z] > authorizing via signed-in user
+[debug] [2018-07-05T14:26:49.728Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
   
- Wed Jul 04 2018 14:46:08 GMT+0100 (BST)
-[debug] [2018-07-04T13:46:09.098Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:46:09.099Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
+ Thu Jul 05 2018 15:26:49 GMT+0100 (BST)
+[debug] [2018-07-05T14:26:50.285Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-05T14:26:50.286Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
   
- Wed Jul 04 2018 14:46:09 GMT+0100 (BST)
-[debug] [2018-07-04T13:46:10.501Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:46:10.502Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
+ Thu Jul 05 2018 15:26:50 GMT+0100 (BST)
+[debug] [2018-07-05T14:26:50.814Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-05T14:26:50.816Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
   
- Wed Jul 04 2018 14:46:10 GMT+0100 (BST)
-[debug] [2018-07-04T13:46:11.404Z] <<< HTTP RESPONSE 200
+ Thu Jul 05 2018 15:26:50 GMT+0100 (BST)
+[debug] [2018-07-05T14:26:51.806Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/wo-home/Documents/dev/me-bot'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2018-07-04T13:46:12.284Z] Fetching environment
-[debug] [2018-07-04T13:46:12.287Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+[debug] [2018-07-05T14:26:52.309Z] Fetching environment
+[debug] [2018-07-05T14:26:52.311Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
   
- Wed Jul 04 2018 14:46:12 GMT+0100 (BST)
-[debug] [2018-07-04T13:46:12.288Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
+ Thu Jul 05 2018 15:26:52 GMT+0100 (BST)
+[debug] [2018-07-05T14:26:52.312Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
   
- Wed Jul 04 2018 14:46:12 GMT+0100 (BST)
-[debug] [2018-07-04T13:46:12.853Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:46:12.854Z] Starting @google-cloud/functions-emulator
-[debug] [2018-07-04T13:46:13.481Z] <<< HTTP RESPONSE 200
+ Thu Jul 05 2018 15:26:52 GMT+0100 (BST)
+[debug] [2018-07-05T14:26:53.377Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-05T14:26:53.378Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-05T14:26:53.400Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
-[debug] [2018-07-04T13:46:14.427Z] Parsing function triggers
-[info] ✔  functions: helloWorld: http://localhost:5001/me-bot-one/us-central1/helloWorld
-[debug] [2018-07-04T13:50:25.374Z] ----------------------------------------------------------------------
-[debug] [2018-07-04T13:50:25.377Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-07-04T13:50:25.377Z] CLI Version:   3.19.3
-[debug] [2018-07-04T13:50:25.377Z] Platform:      darwin
-[debug] [2018-07-04T13:50:25.377Z] Node Version:  v9.10.1
-[debug] [2018-07-04T13:50:25.378Z] Time:          Wed Jul 04 2018 14:50:25 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:25.378Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-07-04T13:50:25.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-04T13:50:25.388Z] > authorizing via signed-in user
-[debug] [2018-07-04T13:50:25.390Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
-  
- Wed Jul 04 2018 14:50:25 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:26.854Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:50:26.855Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
-  
- Wed Jul 04 2018 14:50:26 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:27.488Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:50:27.489Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
-  
- Wed Jul 04 2018 14:50:27 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:28.421Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/wo-home/Documents/dev/me-bot'...
-[info] 
-[info] i  functions: Preparing to emulate functions.
-[debug] [2018-07-04T13:50:29.012Z] Fetching environment
-[debug] [2018-07-04T13:50:29.014Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
-  
- Wed Jul 04 2018 14:50:29 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:29.015Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
-  
- Wed Jul 04 2018 14:50:29 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:29.436Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:50:29.436Z] Starting @google-cloud/functions-emulator
-[debug] [2018-07-04T13:50:29.460Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-04T13:50:29.502Z] Parsing function triggers
-[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
-[debug] [2018-07-04T13:50:29.515Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
-  
- Wed Jul 04 2018 14:50:29 GMT+0100 (BST)
-[debug] [2018-07-04T13:50:29.920Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5004
+[debug] [2018-07-05T14:26:54.947Z] Parsing function triggers
+[warn] ⚠  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2018-07-05T14:26:55.064Z] Error during trigger parsing:  Error occurred while parsing your function triggers.
 
+Error: Certificate object must contain a string "private_key" property.
+    at FirebaseAppError.FirebaseError [as constructor] (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/utils/error.js:39:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/utils/error.js:85:28)
+    at new FirebaseAppError (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/utils/error.js:119:28)
+    at new Certificate (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/auth/credential.js:119:19)
+    at new CertCredential (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/auth/credential.js:189:64)
+    at Object.cert (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/firebase-namespace.js:220:58)
+    at Object.<anonymous> (/Users/wo-home/Documents/dev/me-bot/functions/index.js:7:32)
+    at Module._compile (module.js:649:30)
+    at Object.Module._extensions..js (module.js:660:10)
+    at Module.load (module.js:561:32)
+[warn] ⚠  functions: Error from emulator. Error occurred while parsing your function triggers.
+
+Error: Certificate object must contain a string "private_key" property.
+    at FirebaseAppError.FirebaseError [as constructor] (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/utils/error.js:39:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/utils/error.js:85:28)
+    at new FirebaseAppError (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/utils/error.js:119:28)
+    at new Certificate (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/auth/credential.js:119:19)
+    at new CertCredential (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/auth/credential.js:189:64)
+    at Object.cert (/Users/wo-home/Documents/dev/me-bot/functions/node_modules/firebase-admin/lib/firebase-namespace.js:220:58)
+    at Object.<anonymous> (/Users/wo-home/Documents/dev/me-bot/functions/index.js:7:32)
+    at Module._compile (module.js:649:30)
+    at Object.Module._extensions..js (module.js:660:10)
+    at Module.load (module.js:561:32)
+[debug] [2018-07-05T14:26:55.064Z] 
