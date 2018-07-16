@@ -1,50 +1,207 @@
-[debug] [2018-07-15T15:05:18.798Z] ----------------------------------------------------------------------
-[debug] [2018-07-15T15:05:18.800Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-07-15T15:05:18.800Z] CLI Version:   3.19.3
-[debug] [2018-07-15T15:05:18.800Z] Platform:      darwin
-[debug] [2018-07-15T15:05:18.800Z] Node Version:  v9.10.1
-[debug] [2018-07-15T15:05:18.801Z] Time:          Sun Jul 15 2018 16:05:18 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:18.801Z] ----------------------------------------------------------------------
+[debug] [2018-07-16T12:51:34.574Z] ----------------------------------------------------------------------
+[debug] [2018-07-16T12:51:34.576Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2018-07-16T12:51:34.576Z] CLI Version:   3.19.3
+[debug] [2018-07-16T12:51:34.576Z] Platform:      darwin
+[debug] [2018-07-16T12:51:34.576Z] Node Version:  v9.10.1
+[debug] [2018-07-16T12:51:34.577Z] Time:          Mon Jul 16 2018 13:51:34 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:34.577Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-15T15:05:18.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-15T15:05:18.815Z] > authorizing via signed-in user
-[debug] [2018-07-15T15:05:18.817Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-07-15T15:05:18.817Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/-AEJl5tAUQyaC3yINNDWTj0z5t3ai-vmXbMILOpMbCY',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sun Jul 15 2018 16:05:18 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:19.442Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-15T15:05:19.460Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
+[debug] [2018-07-16T12:51:34.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-16T12:51:34.590Z] > authorizing via signed-in user
+[debug] [2018-07-16T12:51:34.592Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
   
- Sun Jul 15 2018 16:05:19 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:20.328Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-15T15:05:20.329Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
+ Mon Jul 16 2018 13:51:34 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:35.279Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:51:35.280Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
   
- Sun Jul 15 2018 16:05:20 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:21.664Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-15T15:05:21.665Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
-  
- Sun Jul 15 2018 16:05:21 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:23.082Z] <<< HTTP RESPONSE 200
+ Mon Jul 16 2018 13:51:35 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:36.205Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from '/Users/wo-home/Documents/dev/me-bot'...
+[info] === Deploying to 'me-bot-one'...
 [info] 
-[info] i  functions: Preparing to emulate functions.
-[debug] [2018-07-15T15:05:23.838Z] Fetching environment
-[debug] [2018-07-15T15:05:23.841Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2018-07-16T12:51:39.708Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.2.0",
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-07-16T12:51:39.709Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/me-bot-one?view=CONSUMER_VIEW  
   
- Sun Jul 15 2018 16:05:23 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:23.841Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431/clients/_:getWebAppConfig  
+ Mon Jul 16 2018 13:51:39 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:39.709Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/me-bot-one?view=CONSUMER_VIEW  
   
- Sun Jul 15 2018 16:05:23 GMT+0100 (BST)
-[debug] [2018-07-15T15:05:24.501Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-
-[debug] [2018-07-15T15:05:24.547Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-15T15:05:24.547Z] Starting @google-cloud/functions-emulator
-[debug] [2018-07-15T15:05:26.109Z] Parsing function triggers
-[info] ✔  functions: addMessageOrig: http://localhost:5001/me-bot-one/us-central1/addMessageOrig
+ Mon Jul 16 2018 13:51:39 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:41.258Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:51:41.263Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-07-16T12:51:41.264Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
+  
+ Mon Jul 16 2018 13:51:41 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:41.978Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:51:41.978Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+  
+ Mon Jul 16 2018 13:51:41 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:42.324Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-07-16T12:51:42.325Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/me-bot-one/configs  
+  
+ Mon Jul 16 2018 13:51:42 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:51.269Z] ----------------------------------------------------------------------
+[debug] [2018-07-16T12:51:51.271Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2018-07-16T12:51:51.271Z] CLI Version:   3.19.3
+[debug] [2018-07-16T12:51:51.271Z] Platform:      darwin
+[debug] [2018-07-16T12:51:51.271Z] Node Version:  v9.10.1
+[debug] [2018-07-16T12:51:51.272Z] Time:          Mon Jul 16 2018 13:51:51 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:51.272Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-16T12:51:51.282Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-16T12:51:51.283Z] > authorizing via signed-in user
+[debug] [2018-07-16T12:51:51.284Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-bot-one  
+  
+ Mon Jul 16 2018 13:51:51 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:51.867Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:51:51.868Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/me-bot-one/tokens  
+  
+ Mon Jul 16 2018 13:51:51 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:52.503Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'me-bot-one'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[debug] [2018-07-16T12:51:56.316Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.2.0",
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-07-16T12:51:56.317Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/me-bot-one?view=CONSUMER_VIEW  
+  
+ Mon Jul 16 2018 13:51:56 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:56.318Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/me-bot-one?view=CONSUMER_VIEW  
+  
+ Mon Jul 16 2018 13:51:56 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:57.412Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:51:57.480Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-07-16T12:51:57.481Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-bot-one  
+  
+ Mon Jul 16 2018 13:51:57 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:58.215Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:51:58.216Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/56825355431:getServerAppConfig  
+  
+ Mon Jul 16 2018 13:51:58 GMT+0100 (BST)
+[debug] [2018-07-16T12:51:59.231Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-07-16T12:51:59.233Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/me-bot-one/configs  
+  
+ Mon Jul 16 2018 13:51:59 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:00.172Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (91.57 KB) for uploading
+[debug] [2018-07-16T12:52:00.690Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/me-bot-one/locations/us-central1/functions:generateUploadUrl  
+  
+ Mon Jul 16 2018 13:52:00 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:01.256Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:52:01.257Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-f154b1fe-0820-4e86-8f36-6826bb555cf3/1f2785c0-9586-4a44-a271-b88f1c93f0b1.zip?GoogleAccessId=service-56825355431@gcf-admin-robot.iam.gserviceaccount.com&Expires=1531747320&Signature=2iR%2B%2FeumNKWKp4vN5iI3injmYbdJNguxjMpADK9COpOvVKoanMCzHZ26F%2B6%2FRZQ%2FGldszScu33Ihy%2Foh8cdw9DKsdu8l6w2wP6XZvfvNKTwAcUaAmT50tC4uYL0rQ2GxAxM8Zy%2FTK%2BoPIP7LhwvC1Bk0xeLBBWaqEwEfT4z7mUSVHbp2ucfBzoAwLAmAxg74k%2FVhEdJW7O0pu7cm4%2F1JAt9rbd%2FQfYoOv9hlc3GoCfrPG1bgXguXro9sOgmTeZbcMWUG7NqQ33us6nWdS8CUycTkqPhND3MvTr47l96wJMnYPlCeq2yZ1qdV8eER5%2FD%2BpqLonIZ9V2%2BFQC3TXArfbw%3D%3D  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 65536,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: '/var/folders/0h/9jj2btw11g5cy3v96100yqj80000gn/T/firebase-functions-12552sY3nalFyzmA1.zip',
+  fd: 19,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 65536,
+  closed: false } 
+ Mon Jul 16 2018 13:52:01 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:02.165Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[debug] [2018-07-16T12:52:02.167Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/me-bot-one/locations/us-central1/functions  
+  
+ Mon Jul 16 2018 13:52:02 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:02.376Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating function HelperIntents...
+[debug] [2018-07-16T12:52:02.378Z] Trigger is:  {"httpsTrigger":{}}
+[debug] [2018-07-16T12:52:02.379Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/me-bot-one/locations/us-central1/functions/HelperIntents 
+query params: {"updateMask":"sourceUploadUrl,name,labels,httpsTrigger"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-f154b1fe-0820-4e86-8f36-6826bb555cf3/1f2785c0-9586-4a44-a271-b88f1c93f0b1.zip?GoogleAccessId=service-56825355431@gcf-admin-robot.iam.gserviceaccount.com&Expires=1531747320&Signature=2iR%2B%2FeumNKWKp4vN5iI3injmYbdJNguxjMpADK9COpOvVKoanMCzHZ26F%2B6%2FRZQ%2FGldszScu33Ihy%2Foh8cdw9DKsdu8l6w2wP6XZvfvNKTwAcUaAmT50tC4uYL0rQ2GxAxM8Zy%2FTK%2BoPIP7LhwvC1Bk0xeLBBWaqEwEfT4z7mUSVHbp2ucfBzoAwLAmAxg74k%2FVhEdJW7O0pu7cm4%2F1JAt9rbd%2FQfYoOv9hlc3GoCfrPG1bgXguXro9sOgmTeZbcMWUG7NqQ33us6nWdS8CUycTkqPhND3MvTr47l96wJMnYPlCeq2yZ1qdV8eER5%2FD%2BpqLonIZ9V2%2BFQC3TXArfbw%3D%3D',
+  name: 'projects/me-bot-one/locations/us-central1/functions/HelperIntents',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  httpsTrigger: {} } 
+ Mon Jul 16 2018 13:52:02 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:02.713Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:52:02.716Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/me-bot-one/locations/us-central1/functions  
+  
+ Mon Jul 16 2018 13:52:02 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:02.936Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T12:52:02.938Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/bWUtYm90LW9uZS91cy1jZW50cmFsMS9IZWxwZXJJbnRlbnRzL1h3Q1RJM2xXYkk4  
+  
+ Mon Jul 16 2018 13:52:02 GMT+0100 (BST)
+[debug] [2018-07-16T12:52:03.141Z] <<< HTTP RESPONSE 200
